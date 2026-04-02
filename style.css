@@ -1,0 +1,177 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #efefef;
+  color: #000;
+}
+
+/* =========================
+   HOME PAGE
+========================= */
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.home-container {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.main-card {
+  width: 100%;
+  max-width: 700px;
+  min-height: 220px;
+  background-color: #dddddd;
+  border-radius: 36px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.main-card h1 {
+  font-size: clamp(2rem, 4vw, 3.6rem);
+  font-weight: 800;
+  text-align: center;
+  color: #000;
+  line-height: 1.1;
+}
+
+.main-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   PROJECT PAGES
+========================= */
+.projects-page {
+  min-height: 100vh;
+  padding: 32px 20px 48px;
+}
+
+.projects-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 28px;
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.project-box {
+  width: 100%;
+  background-color: #dddddd;
+  border-radius: 36px;
+  min-height: 240px;
+  margin-bottom: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.project-box h2 {
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 800;
+  text-align: center;
+  color: #000;
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 1024px) {
+  .main-card {
+    max-width: 640px;
+    min-height: 210px;
+  }
+
+  .project-box {
+    min-height: 220px;
+  }
+}
+
+/* =========================
+   IPAD / SMALL TABLET
+========================= */
+@media (max-width: 768px) {
+  .home-page {
+    padding: 32px 18px;
+  }
+
+  .home-container {
+    gap: 28px;
+  }
+
+  .main-card {
+    min-height: 180px;
+    border-radius: 30px;
+  }
+
+  .project-box {
+    min-height: 190px;
+    border-radius: 30px;
+    margin-bottom: 26px;
+  }
+}
+
+/* =========================
+   PHONE
+========================= */
+@media (max-width: 480px) {
+  .home-page {
+    padding: 24px 16px;
+  }
+
+  .main-card {
+    min-height: 150px;
+    border-radius: 26px;
+    padding: 20px;
+  }
+
+  .main-card h1 {
+    font-size: clamp(1.7rem, 8vw, 2.3rem);
+  }
+
+  .projects-page {
+    padding: 24px 16px 36px;
+  }
+
+  .project-box {
+    min-height: 160px;
+    border-radius: 26px;
+    margin-bottom: 22px;
+  }
+
+  .project-box h2 {
+    font-size: 1.3rem;
+  }
+
+  .back-link {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+}
