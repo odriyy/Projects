@@ -1,24 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Dark Aesthetic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <div class="container">
-    
-    <a href="featured_projects.html" class="card">
-      <h1>Featured Projects</h1>
-    </a>
+    <header>
+        <nav>
+            <div class="logo"><strong>PORTFOLIO</strong></div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+            </div>
+        </nav>
+    </header>
 
-    <a href="technical_projects.html" class="card">
-      <h1>Technical Projects</h1>
-    </a>
+    <section id="home" class="bg-black">
+        <div class="container hero">
+            <div class="hero-content">
+                <h1>Audrey<br>Dominique</h1>
+                <p class="text-grey">I learn engineering by building things, testing them, failing, improving, and figuring out how systems work along the way.</p>
+                <a href="#projects" class="btn-solid">View Projects</a>
+            </div>
+            <div class="hero-image animated-asset">
+                <div class="tech-circle circle-1"></div>
+                <div class="tech-circle circle-2"></div>
+                <div class="tech-circle circle-3">
+                    <div class="tech-node"></div>
+                </div>
+                <div class="tech-center">
+                    <span>SYS.READY</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  </div>
+    <section id="projects" class="bg-zinc">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projects</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <a href="https://odriyy.github.io/sande.github.io/" target="_blank" class="project-card">
+                    <div class="project-img">
+                        <img src="photos/sande.jpg" alt="SAND-E">
+                        <div class="card-overlay"><span class="overlay-text">View Project</span></div>
+                    </div>
+                    <h3 class="project-title">SAND-E</h3>
+                    <p class="text-grey">Remote controlled beach cleaning robot.</p>
+                </a>
+
+                <a href="haneboard.html" class="project-card">
+                    <div class="project-img">
+                        <img src="photos/haneboard.png" alt="Hane Board">
+                        <div class="card-overlay"><span class="overlay-text">View Build</span></div>
+                    </div>
+                    <h3 class="project-title">Hane Board</h3>
+                    <p class="text-grey">Puzzle training system for neurodivergent workers.</p>
+                </a>
+
+                <div class="project-card">
+                    <div class="project-img placeholder-box">
+                        <span>CV System Active</span>
+                    </div>
+                    <h3 class="project-title">Trash Can ?</h3>
+                    <p class="text-grey">Automated bin using computer vision to instantly sort waste.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
